@@ -3,12 +3,12 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-    res.sendFile('./pages/index.html')
+    res.send('./pages/index.html')
 })
 
 app.get('/about', (req, res) => {
     // res.send('about page')
-    res.sendFile('./pages/about.html')
+    res.send('./pages/about.html')
 })
 
 app.get('/users/:username/:id', (req, res) => {
