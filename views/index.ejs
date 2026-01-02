@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include ('blocks/head')-%>
+
+<body>
+    <h1>home page</h1>
+    <p><a href="/about">about</a></p>
+    <form action="/check" method="post">
+        <input type="text" name="name" placeholder="name">
+        <input type="text" name="city" placeholder="city">
+        <button type="submit">send</button>
+    </form>
+</body>
+</html>
